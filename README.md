@@ -8,7 +8,6 @@ A Simple To - Do Website!
 - Local Storage Supported
 - Displays current Date and Time
 - Responsive, on all devices
--
 - Used technologies (HTML, CSS, JAVASCRIPT and localstorage)
   <p align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50" height="50"/>
