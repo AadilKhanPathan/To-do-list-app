@@ -9,6 +9,7 @@ document.querySelector("#enter").addEventListener("click", () => {
   createItem(item);
 });
 
+
 function displayitems() {
   let items = "";
   for (let i = 0; i < itemArray.length; i++) {
@@ -16,8 +17,10 @@ function displayitems() {
         <div class="input-controller">
             <textarea disabled>${itemArray[i]}</textarea>
             <div class="edit-controller">
-                <i class="fa-solid fa-check deletebtn"></i>
-                <i class="fa-regular fa-pen-to-square editbtn"></i>
+                <span class="material-symbols-outlined deletebtn">check_circle</span>
+                
+                <span class="material-symbols-outlined editbtn"> edit_square </span>
+
             </div>
         </div>
         <div class="update-controller">
@@ -26,6 +29,7 @@ function displayitems() {
         </div>
     </div>`;
   }
+  
    document.querySelector(".to-do-list").innerHTML = items
    activateDeleteListeners()
    activateEditListeners()
