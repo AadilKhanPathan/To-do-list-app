@@ -1,28 +1,23 @@
-*{
-  font-family: "Roboto","Poppins", sans-serif;
+* {
+  font-family: "Roboto", "Poppins", sans-serif;
+  color: #04202c;
   font-weight: 500;
   font-style: normal;
-}
-
-.update-controller{
-    display: none;
-}
-
-* {
   padding: 0;
   margin: 0;
 }
 
-/* #5b7065, black */
+.update-controller {
+  display: none;
+}
+
 body {
-  background-color: #F32E88;
-/* 
-  background: rgba(48, 64, 64, 1.0);
-  background: -webkit-radial-gradient(center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
-  background: -moz-radial-gradient(center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
-  background: radial-gradient(ellipse at center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%); */
-  /* font-family: 'Shadows Into Light', cursive; */
   min-height: 100vh;
+  background: url("5329122.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 button {
@@ -36,7 +31,7 @@ button {
   width: 600px;
   margin: auto;
   padding-top: 50px;
-  color: white;
+  /* color: white; */
 }
 
 .input-header {
@@ -45,35 +40,42 @@ button {
   align-items: center;
   color: white;
   border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   padding: 0px 0px 10px 0px;
 }
 
+
+
 .todo-input input {
-  background-color: #2A2E31;
+  background-color: black;
+  /* color: aliceblue; */
   width: 250px;
+  font-weight: bold;
   font-family: inherit;
+  font-size: 15px;
   border: none;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 4px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   padding: 10px;
   outline: none;
 }
 
 .todo-input button {
-  color: #ffffff;
-  background-color: #F32E88;
+  color: #000000;
+  background-color: #fa702b;
+  font-weight: bold;
+  font-size: 15px;
   font-family: inherit;
   border: none;
   padding: 10px;
-  border-top-right-radius: 4px;
+  border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
 .to-do-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 0px;
 }
 
 .to-do-list i {
@@ -97,10 +99,10 @@ button {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(0, 0, 0, 0.3); */
   border-radius: 10px;
   padding: 8px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); */
 }
 
 .input-controller {
@@ -114,12 +116,11 @@ button {
   border: none;
   resize: none;
   line-height: 1.4;
-  color: white;
   border-radius: 10px;
   background-color: transparent;
   font-size: 1.2rem;
   font-family: inherit;
-  transition: all 0.30s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 textarea:focus {
@@ -135,7 +136,7 @@ textarea:focus {
   display: none;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .app {
     width: 95%;
     text-align: center;
@@ -154,7 +155,6 @@ textarea:focus {
     width: 300px;
     color: #ffffff;
   }
-
 }
 /* .designing{
   background-color: #3B424C;
@@ -163,29 +163,34 @@ textarea:focus {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 
 } */
-.designing{
-  background-color: #3B424C;
-  border-radius: 15px;
+.designing {
   padding: 25px;
-  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
-  10px 10px 70px rgba(0, 0, 0, 0.25),
-  inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-  inset 5px 5px 20px rgba( 255, 255, 255, 0.2),
-  inset -5px -5px 15px rgba(0, 0, 0, 0.75)
+  border-radius: 8px;
+  min-width: 410px;
+  border: 2px solid rgb(255, 136, 46);
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.5);
 }
 
-h1{
+h1 {
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
-.savebtn{
-  background: #ff2d95;
+.savebtn {
+  background: #fa702b;
   color: white;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 10px;
 }
-.cancelbtn{
+.cancelbtn {
   background: #3c4352;
-color: white;
-border: 1px solid #555;
+  color: white;
+  border: 1px solid #555;
+}
+.material-symbols-outlined {
+  cursor: pointer;
+}
+#item::placeholder {
+  color: aliceblue;
 }
