@@ -20,4 +20,5 @@ A Simple To - Do Website!
 <a href="https://aadilkhanpathan.github.io/To-do-list-app/">
   <img src="https://img.shields.io/badge/View%20Site-4A4A4A?style=for-the-badge" />
 </a>
-<img width="1826" height="883" alt="image" src="https://github.com/user-attachments/assets/25a6c590-42c5-49f9-b8e0-bebd5c208a14" />
+<img width="1919" height="1021" alt="image" src="https://github.com/user-attachments/assets/e77a8567-ff30-46f1-ae86-1aa32cd8e57a" />
+
